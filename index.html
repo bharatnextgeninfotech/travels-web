@@ -23,24 +23,81 @@
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <!-- ---css js Cdn link--- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
-      <a href="#" class="logo">CAR</a>
-      <ul class="navlist">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Cab</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="bx bx-menu" id="menu-icon"></div>
+      <nav>
+        <div class="logo">
+          <img src="./images/logo.jpeg" alt="Logo" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <i class="fa fa-solid fa-house-chimney"></i>
+                <i class="fa fa-solid fa-house-chimney"></i>
+              </div>
+              <div class="name"><span data-text="Home">Home</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+              </div>
+              <div class="name"><span data-text="About">About</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+              </div>
+              <div class="name">
+                <span data-text="Services">Services</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <i class="fa fa-solid fa-book"></i>
+                <i class="fa fa-solid fa-book"></i>
+              </div>
+              <div class="name"><span data-text="Cab">Cab</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="name"><span data-text="Contact">Contact</span></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section class="hero">
       <div class="hero-text">
         <h5>#Best Cab Service</h5>
         <h4>Welcome To</h4>
-        <h1>Company</h1>
+        <h1>DEV TRAVELS</h1>
         <p>
           Mumbai Airport transfers , Cabs for local and outstation hire ,Pune
           Railway Station Pick up
@@ -54,15 +111,74 @@
         <img src="./images/c3.png" />
         <img src="./images/c4.png" />
       </div>
+      <div class="icons">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-youtube-line"></i></a>
+        <a href="#"><i class="ri-facebook-box-line"></i></a>
+      </div>
+      <div class="scroll-down">
+        <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+      </div>
     </section>
-    <div class="icons">
-      <a href="#"><i class="ri-instagram-line"></i></a>
-      <a href="#"><i class="ri-youtube-line"></i></a>
-      <a href="#"><i class="ri-facebook-box-line"></i></a>
-    </div>
-    <div class="scroll-down">
-      <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
-    </div>
+    <!-- ---Booking Section--- -->
+    <section class="booking">
+      <div class="text">
+        <h1>Book Now</h1>
+        <p>Book Your Amazing Ride Now.</p>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="sidebar">
+          <h2>Type of Cars</h2>
+          <ul>
+            <li><a href="#" data-filter="all">All Vehicles</a></li>
+            <li><a href="#" data-filter="suv">MPV / SUV - 6 Seater</a></li>
+            <li><a href="#" data-filter="sedan">Sedan Car - 4 Seater</a></li>
+            <li><a href="#" data-filter="bus">Mini Bus - 13-17 Seater</a></li>
+          </ul>
+        </div>
+        <div class="car-listings">
+          <div class="car-card suv">
+            <img src="./images/c1.png" alt="SUV" />
+            <h3>SUV</h3>
+            <p>RS. 16₹ (AC) / Km</p>
+            <button class="book-button">Book Now</button>
+          </div>
+          <div class="car-card sedan">
+            <img src="./images/c2.png" alt="Sedan" />
+            <h3>Sedan</h3>
+            <p>RS. 20₹ (AC) / Km</p>
+            <button class="book-button">Book Now</button>
+          </div>
+          <div class="car-card bus">
+            <img src="./images/c3.png" alt="Bus" />
+            <h3>Bus</h3>
+            <p>RS. 30₹ (AC) / Km</p>
+            <button class="book-button">Book Now</button>
+          </div>
+          <!-- Add more car cards here with appropriate class and content -->
+          <div class="car-card suv">
+            <img src="./images/c1.png" alt="SUV" />
+            <h3>SUV</h3>
+            <p>RS. 16₹ (AC) / Km</p>
+            <button class="book-button">Book Now</button>
+          </div>
+          <div class="car-card sedan">
+            <img src="./images/c2.png" alt="Sedan" />
+            <h3>Sedan</h3>
+            <p>RS. 20₹ (AC) / Km</p>
+            <button class="book-button">Book Now</button>
+          </div>
+          <div class="car-card bus">
+            <img src="./images/c3.png" alt="Bus" />
+            <h3>Bus</h3>
+            <p>RS. 30₹ (AC) / Km</p>
+            <button class="book-button">Book Now</button>
+          </div>
+          <!-- Add more car cards here with appropriate class and content -->
+        </div>
+      </div>
+    </section>
 
     <!-- ---Scrollreveal effect--- -->
     <script src="https://unpkg.com/scrollreveal"></script>

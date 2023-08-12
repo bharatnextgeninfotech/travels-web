@@ -1,10 +1,8 @@
-let menu = document.querySelector("#menu-icon");
-let navlist = document.querySelector(".navlist");
+// ===Navbar section===
+document.querySelector(".menu-toggle").addEventListener("click", function () {
+  document.querySelector("nav ul").classList.toggle("menu-open");
+});
 
-menu.onclick = () => {
-  menu.classList.toggle("bx-x");
-  navlist.classList.toggle("open");
-};
 const sr = ScrollReveal({
   distance: "65px",
   duration: 2600,
@@ -32,3 +30,20 @@ function nextImage() {
 
 // Set an interval for automatic sliding (change image every 5 seconds)
 setInterval(nextImage, 3000);
+
+// booking section
+const filterLinks = document.querySelectorAll(".sidebar a");
+const carCards = document.querySelectorAll(".car-card");
+
+filterLinks.forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+        const filter = e.target.getAttribute("data-filter");
+        carCards.forEach(card => {
+            card.style.display = "none";
+            if (card.classList.contains(filter) || filter === "all") {
+                card.style.display = "flex";
+            }
+        });
+    });
+});
